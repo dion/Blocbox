@@ -524,15 +524,17 @@ html, body{
  .left-nav .settings a {
    color:#FFFFFF;
    text-decoration: none;
-   text-align: right;
-   float: right;
-   margin-right:10px;
-   margin-top:8px;
+   text-align: left;
+   float: left;
+   margin:8px 10px 8px 0;
  }
  .left-nav .active {
    background-color:#34495E; 
    padding:5px;
    margin-left:-1px;
+ }
+ .left-nav .settings .menu.dropit {
+   margin:0;
  }
  /* CONTENT */
  .content {
