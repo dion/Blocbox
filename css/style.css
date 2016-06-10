@@ -45,6 +45,18 @@ html, body{
    .container {
      width: 750px;
    }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+   footer .logo {
+      padding:18px 0 0;
+   }
  }
  @media (min-width: 992px) {
    .container {
@@ -59,10 +71,16 @@ html, body{
    .one-fourth {
      width:21%;
    }
+   footer .logo {
+      padding: 2.35em 0;
+   }
  }
  @media (min-width: 1200px) {
    .container {
      width: 1170px;
+   }
+   footer .logo {
+      padding: 2.35em 0;
    }
  }
 
@@ -318,10 +336,31 @@ html, body{
    background-color: transparent;
  }
  footer .logo{
-   padding: 2.35em 0;
    margin: 0 auto;
    display: block;
  }
+ .reinforcement {
+   background: #34495E url("../images/background.png") top center no-repeat;
+   background: url("../images/background.png") top center no-repeat, linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+   background-size:cover;
+   text-align: center;
+   padding:4em 0;
+ }
+ .reinforcement h2, .reinforcement p {
+   color:#FFFFFF;
+ }
+ .reinforcement p {
+   padding:10px 0;
+ }
+@media (min-width: 320px and max-width: 991px) {
+/*   footer .right-footer-block.one-third {
+      top:0!important;      
+      margin-top:-20px!important;
+   }*/
+   footer .logo {
+      padding:0!important;
+   }
+}
 @media (min-width: 992px){
    footer{
      background-color: #3498DB;
