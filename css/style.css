@@ -2,11 +2,11 @@ html, body{
    overflow-x: hidden;
  }
  body {
-   font-family: "Lato", Helvetica, Arial, sans-serif;
+   font-family: "Libre+Baskerville", Helvetica, Arial, sans-serif;
    color:#333333;
  }
- h1, h2, h3, h4, h5, h6 {
-   font-family: "Varela Round", Helvetica, Arial, sans-serif;
+ h1, h2, h3, h4, h5, h6, .btn {
+   font-family: "Merriweather", Helvetica, Arial, sans-serif;
  }
  h2 {
    font-size:28px;
@@ -34,7 +34,7 @@ html, body{
  .container:after {
    clear: both;
  }
- .one-half, .one-third, .one-fourth {
+ .one-half, .one-third, .one-fourth, .three-quarters {
    width:96%;
    float:left;
    position:relative;
@@ -45,6 +45,10 @@ html, body{
    .container {
      width: 750px;
    }
+   .three-quarters {
+      width:62%;
+      margin-bottom:0;
+   }
    .one-half {
      width:46%;
    }
@@ -53,6 +57,13 @@ html, body{
    }
    .one-fourth {
      width:21%;
+   }
+
+   header .hero h1 {
+      margin: 65px 0 0;
+   }
+   header .hero .btn {
+      font-size: 14px;
    }
    footer .logo {
       padding:18px 0 0;
@@ -71,6 +82,13 @@ html, body{
    .one-fourth {
      width:21%;
    }
+
+   header .hero h1 {
+      margin:105px 0 0;
+   }
+   header .hero .btn {
+     font-size: 15px;
+   }
    footer .logo {
       padding: 2.35em 0;
    }
@@ -79,6 +97,13 @@ html, body{
    .container {
      width: 1170px;
    }
+
+   header .hero h1 {
+      margin:165px 0 0;
+   }
+   header .hero .btn {
+      font-size: 15px;
+   }
    footer .logo {
       padding: 2.35em 0;
    }
@@ -86,9 +111,9 @@ html, body{
 
  /* HEADER */
  header {
-   color:#FFFFFF;
+   color:#333;
    background: #34495E;
-   background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+   background-image: linear-gradient(206deg, #BFC9A4 0%, #DDE3CC 94%);
  }
  header nav {
    padding:1em 0;
@@ -106,14 +131,14 @@ html, body{
  }
  header nav ul > li.btn-outline {
    padding:10px 15px;
-   border:2px solid #FFFFFF;
+   border:2px solid #333333;
    border-radius: 4px;
  }
  header nav ul > li.btn-outline:hover {
    background:#FFFFFF;
  }
  header nav ul > li > a {
-   color:#FFFFFF;
+   color:#333;
    text-decoration: none;
  }
  header nav ul > li.btn-outline:hover > a {
@@ -121,36 +146,33 @@ html, body{
  }
 
  header .hero {
-   text-align: center;
+   text-align:left;
    display:block;
    position: relative;
  }
  header .hero h1 {
-   font-size:48px;
+   font-size:44px;
    font-weight: normal;
-   margin:95px 0 0;
  }
  header .hero p {
-   font-size: 22px;
+   font-size: 19px;
    line-height: 26px;
    font-weight: 100;
-   margin:10px 0 40px;
+   margin:6px 0 30px;
  }
  header .hero img {
    display: block;
-   margin:3em auto 0;
  }
 
  /* BUTTONS */
  .btn {
    border-radius: 4px;
-   color:#FFFFFF;
+   color:#333;
    font-weight: 700;
    text-decoration: none;
    padding:10px 30px;
-   background: #2ECC71;
-   border: 2px solid #2ECC71;
-   box-shadow: 0px 2px 0px 0px #22894E;
+   background: #b9e73c linear-gradient(to bottom, #b9e73c 0%,#8caf2d 100%);
+   box-shadow: 0px 2px 0px 0px #647C20;
  }
   /* BENEFITS */
  .benefits {
@@ -178,7 +200,7 @@ html, body{
  /* PRICING */
  .pricing {
    background: #34495E url("../images/background.png") top center no-repeat;
-   background: url("../images/background.png") top center no-repeat, linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+   background: url("../images/background.png") top center no-repeat, linear-gradient(206deg, #BFC9A4 0%, #DDE3CC 94%);
    background-size:cover;
    text-align: center;
    padding:4em 0;
@@ -309,9 +331,9 @@ html, body{
  }
  /* FOOTER */
  footer {
-   background-color: #34495E;
+   background-color: #333;
    background-image: linear-gradient(to top,
-      #3498DB 0%, #3498DB 50%, #34495E 50%, #34495E 100%);
+      #B9E73C 0%, #B9E73C 50%, #333 50%, #333 100%);
    color: #FFFFFF;
    height: 150px;
    position: relative;
@@ -362,10 +384,10 @@ html, body{
    }
 }
 @media (min-width: 992px){
-   footer{
-     background-color: #3498DB;
-     background-image: linear-gradient(to left,
-        #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
+   footer {
+     background-color: #333;
+     background-image: linear-gradient(to top,
+      #333 0%, #333 50%, #333 50%, #333 100%);
      height: 100px;
    }
    footer p, footer nav ul{
@@ -373,27 +395,27 @@ html, body{
      text-align: left;
    }
    footer .right-footer-block {
-     background-color: #3498DB;
+     background-color: #B9E73C;
    }
    footer .logo{
      padding: 2em 0 2em 1.5em;
    }
 }
-@media screen and (min-width: 1240px) {
+/*@media screen and (min-width: 1240px) {
    .container {
      width: 1210px;
    }
    header .hero h1 {
-     font-size: 68px;
+     font-size: 46px;
    }
    header .hero p {
-     font-size: 32px;
-     line-height: 41px;
+     font-size: 19px;
+     line-height: 30px;
    }
    header .hero a {
-     font-size: 22px;
+     font-size: 15px;
    }
-}
+}*/
 
 /* DASHBOARD */
  .dashboard {
